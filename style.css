@@ -1,0 +1,271 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    overflow: overlay;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+    color: black;
+}
+
+::-webkit-scrollbar {
+    background: transparent;
+    width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00000050;
+}
+
+/* main content styles */
+
+main {
+    display: flex;
+    background-color: #222222;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2f2f2f;
+    width: 100%;
+}
+
+#introduction, #abilities, #equipments, #strategies {
+    margin: .5rem;
+    padding: .5rem;
+    width: 100%;
+}
+
+#introduction>h3, #abilities>h3, #equipments>h3, #strategies>h3 {
+    margin: 0 0 .5rem .5rem;
+}
+
+@media (min-width: 1000px) {
+    .main-content {
+        border-radius: 10px;
+        margin: 3rem;
+        max-width: 1000px;
+    }
+
+    #introduction, #abilities, #equipments, #strategies {
+        padding: 1.5rem;
+        padding-top: 0.5rem;
+    }
+}
+
+/* content navigation */
+
+.content-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: #1b1b1b;
+    width: 100%;
+}
+
+.class {
+    padding: 1rem 1rem 0 1rem;
+    color: #ffff00;
+}
+
+.stat {
+    padding: 1rem;
+}
+
+.content-nav-ul {
+    display: none;
+}
+
+@media (min-width: 1000px) {
+    .content-nav {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .class {
+        padding: 2rem 0 0 2rem;
+    }
+
+    .stat {
+        padding-left: 2rem;
+    }
+}
+
+/* introduction */
+
+.introduction-content {
+    padding: 1rem;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+}
+
+.introduction-content>p>span {
+    display: block;
+    color: #ff0033;
+}
+
+/* abilities */
+
+.abilities-content {
+    display: grid;
+    background-color: #3b3b3b;
+    border-radius: 10px 10px 0px 0px;
+    padding: 1rem;
+    gap: 1.5rem;
+    grid-template-columns: 3rem 1fr;
+}
+
+.abilities-select {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.abilities-button {
+    display: flex;
+    background-color: #2b2b2b;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    height: 425px;
+    max-width: 3rem;
+}
+
+.abilities-button button {
+    background-color: #7fffd4dd;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.abilities-show {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.abilities-show img {
+    max-height: 50px;
+}
+
+.abilities-video {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    margin: 0 auto;
+}
+
+.abilities-video video {
+    display: none;
+    border: 2px solid #1b1b1b;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+@media (min-width: 1000px) {
+    .abilities-content {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 3rem 1fr;
+    }
+
+    .abilities-select {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    .abilities-button {
+        flex-direction: row;
+        height: 3.5rem;
+        max-width: 100%;
+    }
+
+    .abilities-show {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .abilities-video {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .abilities-video video {
+        max-width: 100%;
+        border: 5px solid #1b1b1b;
+    }
+}
+
+.abilities-explanation {
+    display: grid;
+    background-color: #3b3b3b;
+    border-radius: 0px 0px 10px 10px;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+/* ability */
+
+.ability {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.ability-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ability-description {
+    display: flex;
+    flex-direction: column;
+}
+
+/* equipments */
+
+.equipments-content {
+    padding: 1rem;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+}
+
+/* strategies */
+
+.strategies-content {
+    padding: 1rem;
+    background-color: #3b3b3b;
+    border-radius: 10px;
+}
+
+/* footer styles */
+
+footer {
+    display: flex;
+    background-color: #2b2b2b;
+    margin-top: auto;
+    justify-content: center;
+    padding: 1rem;
+}
+
+footer>p {
+    font-size: 0.9rem;
+}
