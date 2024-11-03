@@ -240,6 +240,25 @@ main {
     flex-direction: column;
 }
 
+.ability-img {
+    display: none;
+    width: 100%;
+}
+
+.mobile-img {
+    display: flex;
+}
+
+@media (min-width: 1000px) {
+    .mobile-img {
+        display: none;
+    }
+
+    .pc-img {
+        display: flex;
+    }
+}
+
 /* equipments */
 
 .equipments-content {
