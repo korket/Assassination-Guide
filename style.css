@@ -259,6 +259,10 @@ main {
     }
 }
 
+.ability-explanation-video {
+    width: 100%;
+}
+
 /* equipments */
 
 .equipments-content {
