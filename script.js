@@ -27,13 +27,17 @@ function showAbility(button) {
 
 const equipment_buttons = document.querySelectorAll('.equipment-button');
 
+const neptinos_button = document.querySelector('.button-neptinos');
+
+neptinos_button.style.backgroundColor = neptinos_button.getAttribute('color');
+
 function removeColor() {
     for (const buttons of equipment_buttons) {
         buttons.style.backgroundColor = '';
     };
 };
 
-function showEquipment(button) {
+function showEquipments(button) {
     removeColor();
     const container = document.querySelectorAll('.button-'+button);
     for (const element of container) {
@@ -43,3 +47,22 @@ function showEquipment(button) {
 
 // equipment-show
 
+const equipment_container = document.querySelectorAll('.equipment-container');
+
+const equipment_weapon = document.querySelector('.equipment-weapon');
+
+equipment_weapon.style.display = 'flex';
+
+function hideEquipment() {
+    for (const equipments of equipment_container) {
+        equipments.style.display = 'none';
+    };
+};
+
+function showEquipment(img) {
+    hideEquipment();
+    const container = document.querySelectorAll('.equipment-'+img);
+    for (const element of container) {
+        element.style.display = 'flex';
+    };
+};

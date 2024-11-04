@@ -312,10 +312,10 @@
                 <div class="equipments-content">
                     <div class="equipments-select">
                         <div class="equipments-button">
-                            <button class="button-neptinos equipment-button" onclick="showEquipment('neptinos')" color="#a5e1e0">Neptinos</button>
-                            <button class="button-gnosis equipment-button" onclick="showEquipment('gnosis')" color="#d01f3b">Gnosis</button>
-                            <button class="button-alteia equipment-button" onclick="showEquipment('alteia')" color="#a7fc97">Alteia</button>
-                            <button class="button-arcana equipment-button" onclick="showEquipment('arcana')" color="#643eb3">Arcana</button>
+                            <button class="button-neptinos equipment-button" onclick="showEquipments('neptinos')" color="#a5e1e0">Neptinos</button>
+                            <button class="button-gnosis equipment-button" onclick="showEquipments('gnosis')" color="#d01f3b">Gnosis</button>
+                            <button class="button-alteia equipment-button" onclick="showEquipments('alteia')" color="#a7fc97">Alteia</button>
+                            <button class="button-arcana equipment-button" onclick="showEquipments('arcana')" color="#643eb3">Arcana</button>
                         </div>
                     </div>
 
@@ -329,17 +329,15 @@
                             </div>
 
                             <div class="equipments-container">
-                                <img src="./equipments/neptinos/weapon.jpg" class="equipment-icon">
-                                <img src="./equipments/neptinos/armor.jpg" class="equipment-icon">
-                                <img src="./equipments/neptinos/wings.jpg" class="equipment-icon">
-                                <img src="./equipments/neptinos/ring.jpg" class="equipment-icon">
-                                <img src="./equipments/neptinos/helm.jpg" class="equipment-icon">
-                                <img src="./equipments/neptinos/armor2.jpg" class="equipment-icon">
-                                <img src="./equipments/neptinos/armor3.jpg" class="equipment-icon">
+                                <img src="./equipments/neptinos/weapon.jpg" class="equipment-icon" onclick="showEquipment('weapon')">
+                                <img src="./equipments/neptinos/armor.jpg" class="equipment-icon" onclick="showEquipment('armor')">
+                                <img src="./equipments/neptinos/wings.jpg" class="equipment-icon" onclick="showEquipment('wings')">
+                                <img src="./equipments/neptinos/ring.jpg" class="equipment-icon" onclick="showEquipment('ring')">
+                                <img src="./equipments/neptinos/helm.jpg" class="equipment-icon" onclick="showEquipment('helm')">
                             </div>
 
                             <div class="equipment-show">
-                                <div class="equipment-description-container weapon">
+                                <div class="equipment-container equipment-weapon">
                                         <div class="equipment-title">
                                             <h4>Tepethia, the Crimson Sword of Requiem</h4>
                                             <img src="./equipments/neptinos/weapon.jpg">
@@ -349,20 +347,138 @@
                                             <br>
                                             <h5>Deltirama Grade Weapon (Melee)</h5>
                                             <br>
-                                            <a>Resignation is what kills people. Once they've rejected resignation, humans gain the privilege of making humanity their footpath.</a>
+                                            <p>Resignation is what kills people. Once they've rejected resignation, humans gain the privilege of making humanity their footpath.</p>
                                             <br>
                                             <h5>Stats</h5>
-                                            <a>∴ +4000 Damage</a>
-                                            <a>∴ +410 AGI</a>
-                                            <a>∴ +750 HP</a>
-                                            <a>∴ +0.2x Crit Multiplier</a>
+                                            <ul>
+                                                <li>∴ +4000 Damage</li>
+                                                <li>∴ +410 AGI</li>
+                                                <li>∴ +750 HP</li>
+                                                <li>∴ +0.2x Crit Multiplier</li>
+                                            </ul>
                                             <br>
                                             <h5>Passive</h5>
-                                            <a>⁘ Activates Blood Release on every 14th attack</a>
-                                            <a>⁘ Heals user for (250 + MAIN STAT X 0.6) HP and activating a random Wrath effect</a>
-                                            <a>⁘ Red Wrath: deals (MAIN STAT X 4.25) magic splash damage</a>
-                                            <a>⁘ Green Wrath: reduces enemy movement and ATK SPD by 66% for 3 seconds, deals (MAIN STAT X 2.25) magic damage in an AoE, and stuns non-boss units for 0.25 seconds</a>
+                                            <ul>
+                                                <li>⁘ Activates Blood Release on every 14th attack</li>
+                                                <li>⁘ Heals user for (250 + MAIN STAT X 0.6) HP and activating a random Wrath effect</li>
+                                                <li>⁘ Red Wrath: deals (MAIN STAT X 4.25) magic splash damage</li>
+                                                <li>⁘ Green Wrath: reduces enemy movement and ATK SPD by 66% for 3 seconds, deals (MAIN STAT X 2.25) magic damage in an AoE, and stuns non-boss units for 0.25 seconds</li>
+                                            </ul>
                                         </div>
+                                </div>
+
+                                <div class="equipment-container equipment-armor">
+                                    <div class="equipment-title">
+                                        <h4>Vest of Cyclone</h4>
+                                        <img src="./equipments/neptinos/armor.jpg">
+                                    </div>
+                                    <div class="equipment-description">
+                                        <h5>[Epic]</h5>
+                                        <br>
+                                        <h5>Neptinos Grade Armor -</h5>
+                                        <br>
+                                        <p>Vest that bestows you with the speed of a cyclone.</p>
+                                        <br>
+                                        <h5>Stats</h5>
+                                        <ul>
+                                            <li>∴ +175 Armor</li>
+                                            <li>∴ +270 AGI</li>
+                                            <li>∴ +5% Skill Damage</li>
+                                            <li>∴ +5% Magic Defense</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Passive</h5>
+                                        <ul>
+                                            <li>⁘ On skill cast, activates Wind Fury for 1.5 seconds</li>
+                                            <li>⁘ Next 2 attacks hit once to deal bonus (50% ATK DMG) physical damage</li>
+                                            <li>⁘ Increases movement speed by 300 (past limit)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="equipment-container equipment-wings">
+                                    <div class="equipment-title">
+                                        <h4>Slayer Boots</h4>
+                                        <img src="./equipments/neptinos/wings.jpg">
+                                    </div>
+                                    <div class="equipment-description">
+                                        <h5>[Epic]</h5>
+                                        <br>
+                                        <h5>Neptinos Grade Wings -</h5>
+                                        <br>
+                                        <p>Boots composed of demon hides that grants excellent mobility
+                                        </p>
+                                        <br>
+                                        <h5>Stats</h5>
+                                        <ul>
+                                            <li>∴ +1350 Damage</li>
+                                            <li>∴ +105 STR</li>
+                                            <li>∴ +150 AGI</li>
+                                            <li>∴ +0.1x Crit Multiplier</li>
+                                            <li>∴ +4% Skill Damage</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="equipment-container equipment-ring">
+                                    <div class="equipment-title">
+                                        <h4>Ring of the Reaper</h4>
+                                        <img src="./equipments/neptinos/ring.jpg">
+                                    </div>
+                                    <div class="equipment-description">
+                                        <h5>[Epic]</h5>
+                                        <br>
+                                        <h5>Neptinos Grade Accessory -</h5>
+                                        <br>
+                                        <p>One who controls death, may obtain infinite powers</p>
+                                        <br>
+                                        <h5>Stats</h5>
+                                        <ul>
+                                            <li>∴ +260 AGI</li>
+                                            <li>∴ +295 INT</li>
+                                            <li>∴ +60 HP regen</li>
+                                            <li>∴ +30 MP regen</li>
+                                            <li>∴ +20% Attack Speed</li>
+                                            <li>∴ +10% Skill Damage</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Passive</h5>
+                                        <ul>
+                                            <li>⁘ On skill cast, activates Wind Fury for 1.5 seconds</li>
+                                            <li>⁘ Next 2 attacks hit once to deal bonus (50% ATK DMG) physical damage</li>
+                                            <li>⁘ Increases movement speed by 300 (past limit)</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="equipment-container equipment-helm">
+                                    <div class="equipment-title">
+                                        <h4>Grim Visage</h4>
+                                        <img src="./equipments/neptinos/helm.jpg">
+                                    </div>
+                                    <div class="equipment-description">
+                                        <h5>[Epic]</h5>
+                                        <br>
+                                        <h5>Neptinos Grade Headwear</h5>
+                                        <br>
+                                        <p>The face of death itself.</p>
+                                        <br>
+                                        <h5>Stats</h5>
+                                        <ul>
+                                            <li>∴ +90 Armor</li>
+                                            <li>∴ +145 AGI</li>
+                                            <li>∴ +750 HP</li>
+                                            <li>∴ +6% Skill Damage</li>
+                                            <li>∴ +6% Crit Chance</li>
+                                        </ul>
+                                        <br>
+                                        <h5>Passive</h5>
+                                        <ul>
+                                            <li>⁘ On skill cast, activates Wind Fury for 1.5 seconds</li>
+                                            <li>⁘ Next 2 attacks hit once to deal bonus (50% ATK DMG) physical damage</li>
+                                            <li>⁘ Increases movement speed by 300 (past limit)</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

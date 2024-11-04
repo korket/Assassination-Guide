@@ -71,6 +71,7 @@ main {
 
 h5 {
     font-weight: bold;
+    margin-bottom: 0.5rem;
 }
 
 /* content navigation */
@@ -324,6 +325,14 @@ h5 {
     width: 100%;
 }
 
+.equipment-container {
+    display: none;
+    padding: 0.5rem;
+    background-color: #2b2b2b;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
 .equipments img {
     max-height: 75px;
 }
@@ -331,22 +340,10 @@ h5 {
 .equipment-title {
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: center;
 }
 
-.equipment-description-container {
-    display: grid;
-    padding: 0.5rem;
-    background-color: #2b2b2b;
-    /* border-radius: 10px; */
-}
-
-.equipment-description {
-    display: flex;
-    flex-direction: column;
-}
-
-.equipment-description a {
+.equipment-description a, li, p {
     font-size: 14px;
 }
 
