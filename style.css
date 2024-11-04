@@ -118,6 +118,10 @@ h5 {
     border-radius: 10px;
 }
 
+.introduction-content p {
+    font-size: 16px;
+}
+
 .introduction-content>p>span {
     display: block;
     color: #ff0033;
