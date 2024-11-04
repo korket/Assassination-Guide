@@ -23,9 +23,11 @@ function showAbility(button) {
 
 // equipment-buttons
 
+const equipments_neptinos = document.querySelector('.equipments-neptinos');
 const equipment_buttons = document.querySelectorAll('.equipment-button');
 const neptinos_button = document.querySelector('.button-neptinos');
 
+equipments_neptinos.style.display = 'flex';
 neptinos_button.style.backgroundColor = neptinos_button.getAttribute('color');
 
 function removeColor() {
@@ -39,20 +41,21 @@ const equipments = document.querySelectorAll('.equipments');
 function removeGrade() {
     for (const equipment of equipments) {
         equipment.style.display = 'none';
-    }
-}
+    };
+};
 
 function showEquipments(button) {
     removeColor();
     removeGrade();
     const container = document.querySelectorAll('.button-'+button);
-    const gradeContainer = document.querySelectorAll('.equipment-'+button);
+    const gradeContainer = document.querySelectorAll('.equipments-'+button);
     for (const element of container) {
         element.style.backgroundColor = element.getAttribute ('color');
     };
     for (const grade of gradeContainer) {
         grade.style.display = 'flex';
     };
+    showEquipment('weapon');
 };
 
 // equipment-show
