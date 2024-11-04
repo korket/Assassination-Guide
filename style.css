@@ -349,6 +349,11 @@ h5 {
 
 .equipment-title h4 {
     max-width: 80%;
+    font-size: 18px;
+}
+
+.equipment-description h5 {
+    font-size: 17px;
 }
 
 .equipment-description a, li, p {
