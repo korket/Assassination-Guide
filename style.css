@@ -291,7 +291,11 @@ main {
     cursor: pointer;
 }
 
-.button-neptinos {
+.equipment-button {
+    background-color: #7fffd4dd;
+}
+
+/* .button-neptinos {
     background-color: #a5e1e0;
 }
 
@@ -305,7 +309,7 @@ main {
 
 .button-arcana {
     background-color: #643eb3;
-}
+} */
 
 /* equipment */
 
