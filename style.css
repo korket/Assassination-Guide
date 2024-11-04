@@ -329,9 +329,9 @@ h5 {
     width: 100%;
 }
 
-.equipment-container {
-    display: none;
-    padding: 0.5rem;
+.equipment-description-container {
+    display: flex;
+    padding: 0.75rem;
     background-color: #2b2b2b;
     border-radius: 5px;
     flex-direction: column;
@@ -347,8 +347,41 @@ h5 {
     align-items: center;
 }
 
+.equipment-title h4 {
+    max-width: 80%;
+}
+
 .equipment-description a, li, p {
-    font-size: 14px;
+    font-size: 16px;
+}
+
+.equipment-explanation {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+.equipment-explanation p {
+    font-size: 16px;
+}
+
+@media (min-width: 1000px) {
+    .equipment-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    .equipment-explanation {
+        padding: 0.5rem 1rem;
+        margin-top: 0;
+    }
+}
+
+.equipment-container {
+    display: none;
 }
 
 /* strategies */
@@ -371,4 +404,21 @@ footer {
 
 footer>p {
     font-size: 0.9rem;
+}
+
+
+.deltirama {
+    color: #c09dc7;
+}
+
+.neptinos {
+    color: #a5e1e0;
+}
+
+.alteia {
+    color: #d01f3b;
+}
+
+.arcana {
+    color: #643eb3;
 }
