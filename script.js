@@ -3,9 +3,11 @@
 const ability = document.querySelectorAll('.ability');
 const ability_d = document.querySelectorAll('.ability-d');
 const button_d = document.querySelector('.button-d');
+const abilitiesButtons = document.querySelectorAll('.ability-button')
 ability_d[0].style.display = 'flex';
 ability_d[1].style.display = 'flex';
 ability_d[2].style.display = 'flex';
+button_d.style.backgroundColor = '#a5e1e0';
 
 function hide() {
     for (const abilities of ability) {
@@ -13,11 +15,22 @@ function hide() {
     };
 };
 
+function removeAbilitiesButtonColor() {
+    for (const abilitiesButton of abilitiesButtons) {
+        abilitiesButton.style.backgroundColor = '#7fffd4dd';
+    };
+};
+
 function showAbility(button) {
     hide();
+    removeAbilitiesButtonColor();
     const container = document.querySelectorAll('.ability-'+button);
+    const abilitiesButton = document.querySelectorAll('.button-'+button);
     for (const element of container) {
         element.style.display = 'flex';
+    };
+    for (const button of abilitiesButton) {
+        button.style.backgroundColor = '#a5e1e0';
     };
 };
 

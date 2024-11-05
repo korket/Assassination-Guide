@@ -57,13 +57,13 @@
                 <div class="abilities-content">
                     <div class="abilities-select">
                         <div class="abilities-button">
-                            <button class="button-d" onclick="showAbility('d')">[D]</button>
-                            <button class="button-q" onclick="showAbility('q')">[Q]</button>
-                            <button class="button-w" onclick="showAbility('w')">[W]</button>
-                            <button class="button-e" onclick="showAbility('e')">[E]</button>
-                            <button class="button-r" onclick="showAbility('r')">[R]</button>
-                            <button class="button-t" onclick="showAbility('t')">[T]</button>
-                            <button class="button-f" onclick="showAbility('f')">[F]</button>
+                            <button class="button-d ability-button" onclick="showAbility('d')">[D]</button>
+                            <button class="button-q ability-button" onclick="showAbility('q')">[Q]</button>
+                            <button class="button-w ability-button" onclick="showAbility('w')">[W]</button>
+                            <button class="button-e ability-button" onclick="showAbility('e')">[E]</button>
+                            <button class="button-r ability-button" onclick="showAbility('r')">[R]</button>
+                            <button class="button-t ability-button" onclick="showAbility('t')">[T]</button>
+                            <button class="button-f ability-button" onclick="showAbility('f')">[F]</button>
                         </div>
                     </div>
 
@@ -594,7 +594,9 @@
                                         <br>
                                         <p>Also every 5th of your attack it will AoE damage to enemies and ministuns them while also healing you and your allies.</p>
                                         <br>
-                                        <p>The passive has 15 seconds cooldown after activation.</p>
+                                        <p>It syncs well with yout [T] since it has 15 seconds cooldown after activation.</p>
+                                        <br>
+                                        <p>Make sure to activate it before burst!</p>
                                     </div>
                                 </div>
 
@@ -821,7 +823,7 @@
                                     <div class="equipment-explanation">
                                         <p>Increased Attack Damage, Agility, HP, Crit Multiplier, everything!</p>
                                         <br>
-                                        <p>The only thing that's changed here is now the passive no longer gives you heal every 14th hit, instead it regens your HP by 7.5% every second for 7.5 seconds.</p>
+                                        <p>The only thing that's different here is now the passive no longer gives you heal every 14th hit, instead it regens your HP by 7.5% every second for 7.5 seconds.</p>
                                     </div>
                                 </div>
 
@@ -913,7 +915,7 @@
                                 <div class="equipment-container equipment-wings">
                                     <div class="equipment-description-container">
                                         <div class="equipment-title">
-                                            <h4>Wings of Slayer</h4>
+                                            <h4>Storm</h4>
                                             <img src="./equipments/alteia/wings.jpg">
                                         </div>
                                         <div class="equipment-description">
@@ -921,41 +923,38 @@
                                             <br>
                                             <h5><span class="alteia">Alteia</span> Grade Wings</h5>
                                             <br>
-                                            <p>Unconstrained emotions can only bring calamity..</p>
+                                            <p>Rave, and do not stop ! One mistake can cost your life.</p>
                                             <br>
                                             <h5>Stats</h5>
                                             <ul>
-                                                <li>∴ +250 STR</li>
-                                                <li>∴ +235 AGI</li>
-                                                <li>∴ +6% Skill Damage</li>
+                                                <li>∴ +1200 Damage</li>
+                                                <li>∴ +135 Main Stat</li>
+                                                <li>∴ +150 All Stats</li>
+                                                <li>∴ +0.2x Crit Multiplier</li>
                                             </ul>
                                             <br>
                                             <h5>Passive</h5>
                                             <ul>
-                                                <li>⁘ On skill cast, empowers next attack with Decimation</li>
-                                                <li>⁘ Deals ((MAIN STAT X 1.5) + AGI) pure damage</li>
-                                                <li>⁘ Can crit based on user's critical chance</li>
-                                                <li>⁘ Increases AGI by 27 for 6 seconds (up to 10 stacks)</li>
-                                                <li>⁘ At max stacks, duration cannot be extended but increases skill damage by 10%</li>
+                                                <li>⁘ On skill cast, increases critical chance by 6% for 6 seconds (stacks up to 3 times)</li>
                                             </ul>
                                         </div>
                                     </div>
 
                                     <div class="equipment-explanation">
-                                        <p>You can make this wing if you want, since there are no better alternatives in the mid game.</p>
+                                        <p>Frustrated by your skills not hitting critical strike?</p>
                                         <br>
-                                        <p>Or you can just skip it and keep using Slayer Boots until late game and craft Storm.</p>
+                                        <p>Well now, this wing is the solution to all of your past problems.</p>
                                         <br>
-                                        <p>The way to use this wing is to hit after you cast a skill, it gives you extra agility per proc.</p>
+                                        <p>It gives everything assassin needs, from high Attack Damage, high Stats, Crit Multiplier, and also your critical chance!</p>
                                         <br>
-                                        <p>At max stacks, it will increase your skill damage by 10%.</p>
+                                        <p>Every skill cast will increase your critical chance by 6% per stack for a maximum of 3 stacks, a total of 18% critical chance bonus from a single item.</p>
                                     </div>
                                 </div>
 
                                 <div class="equipment-container equipment-ring">
                                     <div class="equipment-description-container">
                                         <div class="equipment-title">
-                                            <h4>Cold Ring of Death</h4>
+                                            <h4>Ring of Frozen Soul</h4>
                                             <img src="./equipments/alteia/ring.jpg">
                                         </div>
                                         <div class="equipment-description">
@@ -963,39 +962,40 @@
                                             <br>
                                             <h5><span class="alteia">Alteia</span> Grade Accessory</h5>
                                             <br>
-                                            <p>A ring found on the corpse of a man who met a cold lone death.</p>
+                                            <p>Ring imbued with dreadful ancient spirits</p>
                                             <br>
                                             <h5>Stats</h5>
                                             <ul>
-                                                <li>∴ +430 Main Stat</li>
-                                                <li>∴ +60 HP regen</li>
-                                                <li>∴ +30 MP regen</li>
-                                                <li>∴ +20% Attack Speed</li>
-                                                <li>∴ +14.5% Skill Damage</li>
+                                                <li>∴ +555 Main Stat</li>
+                                                <li>∴ +30% Attack Speed</li>
+                                                <li>∴ +17.5% Skill Damage</li>
+                                                <li>∴ +90 HP regen</li>
+                                                <li>∴ +45 MP regen</li>
                                             </ul>
                                             <br>
                                             <h5>Active</h5>
                                             <ul>
-                                                <li>❖ On use, activate Darkness Ray</li>
-                                                <li>❖ Blocks all damage for 3 seconds and reflects it around user</li>
-                                                <li>❖ Deals (DMG TAKEN before reductions X 5) pure damage (up to (max HP X 5))</li>
-                                                <li>❖ Cooldown: 75 seconds</li>
+                                                <p>❖ On use, activates Frozen Aegis</p>
+                                                <p>❖ Gives immunity to damage and debuffs for 3 seconds</p>
+                                                <p>❖ Upon expiration, deals (damage received X 10) pure damage in an AoE (up to (max HP X 10))</p>
+                                                <p>❖ Cooldown: 60 seconds</p>
                                             </ul>
                                         </div>
                                     </div>
 
                                     <div class="equipment-explanation">
-                                        <p>Best mid game ring for assassin, it gives a lot of main stat, huge skill damage, and a nice addition of HP regen.</p>
+                                        <li>Best mid game ring now upgraded to best late game ring.</li>
                                         <br>
-                                        <p>The active allows you to blocks all damage taken for 3 seconds, and then reflects it back to nearby enemies.</p>
+                                        <li>The active allows you to clear debuffs which is pretty useful, whether defensively or aggresively.</li>
                                         <br>
+                                        <li>When you want to burst and currently has a debuff that reduces your damage, make sure to use it!</li>
                                     </div>
                                 </div>
 
                                 <div class="equipment-container equipment-helm">
                                     <div class="equipment-description-container">
                                         <div class="equipment-title">
-                                            <h4>Eye of Wallachia</h4>
+                                            <h4>Eye of the Reaper</h4>
                                             <img src="./equipments/alteia/helm.jpg">
                                         </div>
                                         <div class="equipment-description">
@@ -1003,34 +1003,340 @@
                                             <br>
                                             <h5><span class="alteia">Alteia</span> Grade Headwear</h5>
                                             <br>
-                                            <p>I can see your death ..</p>
+                                            <p>Death stares into you..</p>
                                             <br>
                                             <h5>Stats</h5>
                                             <ul>
-                                                <li>∴ +105 Armor</li>
-                                                <li>∴ +185 AGI</li>
-                                                <li>∴ +900 HP</li>
-                                                <li>∴ +7.5% Skill Damage</li>
-                                                <li>∴ +7.5% Crit Chance</li>
+                                                <li>∴ +115 Armor</li>
+                                                <li>∴ +285 AGI</li>
+                                                <li>∴ +1500 HP</li>
+                                                <li>∴ +10% Skill Damage</li>
+                                                <li>∴ +10% Crit Chance</li>
                                             </ul>
                                             <br>
                                             <h5>Passive</h5>
                                             <ul>
-                                                <li>⁘ 25% chance to activate Eye of Death on attack</li>
-                                                <li>⁘ Increases crit multiplier by 0.20, ATK DMG by 15%, and AGI by 225 for 6 seconds</li>
+                                                <li>⁘ On attack, activates Eye of the Reaper</li>
+                                                <li>⁘ Increases ATK DMG by 17.5%, critical damage by 0.25 and AGI by 300 for 7.5 seconds</li>
                                                 <li>⁘ Cooldown: 15 seconds</li>
                                             </ul>
                                         </div>
                                     </div>
 
                                     <div class="equipment-explanation">
-                                        <p>Another crit chance increase, which will be always good for assassin.</p>
+                                        <li>Annoyed by your helm not proccing even though you have hit the boss for few seconds?</li>
                                         <br>
-                                        <p>Other than that, it gives decent Agility, Skill Damage, and additional HP so you won't become a paper.</p>
+                                        <li>Say goodbye to that, now with the upgraded version all you have to do is just to hit once to proc it!</li>
                                         <br>
-                                        <p>The passive is great for assassin, it gives everything that assassin need to deal more damage.</p>
-                                        <br>
-                                        <p>Make sure you proc the passive before burst, it increases your damage by a lot.</p>
+                                        <li>Always proc this helm before burst, as it gives you insane amount of damage boost.</li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Arcana -->
+
+                        <div class="equipments-arcana equipments">
+                            <div class="equipments-title equipments-title-arcana">
+                                <h3>Up to Styrix Gear Progression</h3>
+                            </div>
+
+                            <div class="equipments-container">
+                                <img src="./equipments/arcana/weapon.jpg" class="equipment-icon" onclick="showEquipment('weapon')">
+                                <img src="./equipments/arcana/armor.jpg" class="equipment-icon" onclick="showEquipment('armor')">
+                                <img src="./equipments/arcana/wings.jpg" class="equipment-icon" onclick="showEquipment('wings')">
+                                <img src="./equipments/arcana/ring.jpg" class="equipment-icon" onclick="showEquipment('ring')">
+                                <img src="./equipments/arcana/helm.jpg" class="equipment-icon" onclick="showEquipment('helm')">
+                            </div>
+
+                            <div class="equipments-show">
+                                <div class="equipment-container equipment-weapon">
+                                    <div class="equipment-description-container">
+                                        <div class="equipment-title">
+                                            <h4 class="arcana">Duskblade</h4>
+                                            <img src="./equipments/arcana/weapon.jpg">
+                                        </div>
+                                        <div class="equipment-description">
+                                            <h5 class="arcana">[Epic]</h5>
+                                            <br>
+                                            <h5><span class="arcana">Arcana</span> Grade Weapon (Melee)</h5>
+                                            <br>
+                                            <p>Dagger that puts end to all living things.</p>
+                                            <br>
+                                            <h5>Stats</h5>
+                                            <ul>
+                                                <li>∴ +10500 Damage</li>
+                                                <li>∴ +1100 AGI</li>
+                                                <li>∴ +0.6x Crit Multiplier</li>
+                                                <li>∴ +8% Skill Damage</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Passive</h5>
+                                            <ul>
+                                                <li>⁘ On basic attack, activates Twilight</li>
+                                                <li>⁘ Deals (90000 + AGI X 30) magic damage to target and takes 10% bonus skill damage for 4 seconds</li>
+                                                <li>⁘ Cooldown: 12 seconds, reduced by 1 second on each skill crit</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="equipment-description-container">
+                                        <div class="equipment-title">
+                                            <h4 class="arcana">Divine Slayer</h4>
+                                            <img src="./equipments/arcana/weapon2.jpg">
+                                        </div>
+                                        <div class="equipment-description">
+                                            <h5 class="arcana">[Epic]</h5>
+                                            <br>
+                                            <h5><span class="arcana">Arcana</span> Grade Weapon (Melee)</h5>
+                                            <br>
+                                            <p>A sword that has power to cut down divine beings.</p>
+                                            <br>
+                                            <h5>Stats</h5>
+                                            <ul>
+                                                <li>∴ +9400 Damage</li>
+                                                <li>∴ +880 AGI</li>
+                                                <li>∴ +2500 HP</li>
+                                                <li>∴ +0.5x Crit Multiplier</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Passive</h5>
+                                            <ul>
+                                                <li>⁘ Every 12th attack activates Divine Slayer</li>
+                                                <li>⁘ Deals (4500 + MAIN STAT X 7.5) magic damage in an AoE</li>
+                                                <li>⁘ Deals 20% bonus damage to enemies below 50% HP</li>
+                                                <li>⁘ On skill cast, activates Transcendence</li>
+                                                <li>⁘ Increases AGI by 450 and HP regen by (Max HP X 7.5%) for 7.5 seconds</li>
+                                                <li>⁘ Divine Cut activates every 4th attack</li>
+                                                <li>⁘ Cooldown: 15 seconds</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="equipment-explanation">
+                                    </div>
+                                </div>
+
+                                <div class="equipment-container equipment-armor">
+                                    <div class="equipment-description-container">
+                                        <div class="equipment-title">
+                                            <h4 class="arcana">Astral Fury</h4>
+                                            <img src="./equipments/arcana/armor.jpg">
+                                        </div>
+                                        <div class="equipment-description">
+                                            <h5 class="arcana">[Epic]</h5>
+                                            <br>
+                                            <h5><span class="arcana">Arcana</span> Grade Armor</h5>
+                                            <br>
+                                            <p>Armor blessed with astral power</p>
+                                            <br>
+                                            <h5>Stats</h5>
+                                            <ul>
+                                                <li>∴ +215 Armor</li>
+                                                <li>∴ +540 AGI</li>
+                                                <li>∴ +15% Skill Damage</li>
+                                                <li>∴ +12% Magic Defense</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Passive</h5>
+                                            <ul>
+                                                <li>⁘ On skill cast, activates Astral Fury</li>
+                                                <li>⁘ Increases AGI by 150 and movement speed for 1.5 seconds</li>
+                                                <li>⁘ Next 2 attacks strikes 2 additional times for 50% physical damage</li>
+                                                <li>⁘ On 3rd consecutive proc, increases damage dealt by skills by 5% for 4 seconds and next 3 attacks calls down comets, each dealing 12500 magic damage (can critically strike)</li>
+                                                <li>⁘ Proc cooldown: 0.5 seconds</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="equipment-description-container">
+                                        <div class="equipment-title">
+                                            <h4 class="arcana">Exitium, the Armor of Ruin</h4>
+                                            <img src="./equipments/arcana/armor2.jpg">
+                                        </div>
+                                        <div class="equipment-description">
+                                            <h5 class="arcana">[Epic]</h5>
+                                            <br>
+                                            <h5><span class="arcana">Arcana</span> Grade Armor</h5>
+                                            <br>
+                                            <p>Doomsday, is it the destruction of the world, or its restoration?</p>
+                                            <br>
+                                            <h5>Stats</h5>
+                                            <ul>
+                                                <li>∴ +230 Armor</li>
+                                                <li>∴ +190 STR</li>
+                                                <li>∴ +440 AGI</li>
+                                                <li>∴ +14% Skill Damage</li>
+                                                <li>∴ +14% Crit Chance</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Passive</h5>
+                                            <ul>
+                                                <li>⁘ On attack, applies Mark of Ruin</li>
+                                                <li>⁘ Increases your damage dealt to target up to 8% based on target's missing HP for 4 seconds</li>
+                                                <li>⁘ If HP drops below 20%, summons Reaper</li>
+                                                <li>⁘ Prevents HP from dropping below 1 for 6 seconds</li>
+                                                <li>⁘ Afterwards, heals you to full and deals (AGI X 50 ~ 125) pure damage to nearby enemies based on their missing HP</li>
+                                                <li>⁘ Cooldown 60 seconds</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Specialties - Bringer of Ruin</h5>
+                                            <p>※ Martial Artist - Nameless Arts reduces damage taken by 20% while active. Also grants immunity to instant death spell</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="equipment-explanation">
+                                    </div>
+                                </div>
+
+                                <div class="equipment-container equipment-wings">
+                                    <div class="equipment-description-container">
+                                        <div class="equipment-title">
+                                            <h4 class="arcana">Soulstorm</h4>
+                                            <img src="./equipments/arcana/wings.jpg">
+                                        </div>
+                                        <div class="equipment-description">
+                                            <h5 class="arcana">[Epic]</h5>
+                                            <br>
+                                            <h5><span class="arcana">Arcana</span> Grade Wings</h5>
+                                            <br>
+                                            <p>Death is our only respite.</p>
+                                            <br>
+                                            <h5>Stats</h5>
+                                            <ul>
+                                                <li>∴ +2000 Damage</li>
+                                                <li>∴ +225 Main Stat</li>
+                                                <li>∴ +175 All Stats</li>
+                                                <li>∴ +0.4x Crit Multiplier</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Passive</h5>
+                                            <ul>
+                                                <li>⁘ On skill cast, increases skill damage and crit chance by 6% for 3 seconds</li>
+                                                <li>⁘ Stacks up to 3 times</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Active</h5>
+                                            <ul>
+                                                <li>❖ On use, activates Soulstorm</li>
+                                                <li>❖ Grants invisibility and 200 movement speed for 2 seconds</li>
+                                                <li>❖ Empowers next attack, dealing 40000 + Main Stat X 6 magic damage (lands as critical strike)</li>
+                                                <li>❖ Cooldown: 10 seconds</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="equipment-description-container">
+                                        <div class="equipment-title">
+                                            <h4 class="arcana">Soulstorm</h4>
+                                            <img src="./equipments/arcana/wings2.jpg">
+                                        </div>
+                                        <div class="equipment-description">
+                                            <h5 class="arcana">[Epic]</h5>
+                                            <br>
+                                            <h5><span class="arcana">Arcana</span> Grade Wings</h5>
+                                            <br>
+                                            <p>Storm!</p>
+                                            <br>
+                                            <h5>Stats</h5>
+                                            <ul>
+                                                <li>∴ +1500 Damage</li>
+                                                <li>∴ +180 Main Stat</li>
+                                                <li>∴ +150 All Stats</li>
+                                                <li>∴ +0.3x Crit Multiplier</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Passive</h5>
+                                            <ul>
+                                                <li>⁘ On skill cast, increases skill damage and crit chance by 5% for 6 seconds. Stacks up to 3 times.</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Active</h5>
+                                            <ul>
+                                                <li>❖ On use, activates Bloodstorm</li>
+                                                <li>❖ Becomes invisible (for Assassin, triggers Dark Shroud instead) and gains 200 movement speed for 2 seconds</li>
+                                                <li>❖ Next attack will will be empowered, dealing MAIN STAT X 6 X crit multiplier magic damage</li>
+                                                <li>❖ Cooldown: 10 seconds</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="equipment-explanation">
+                                    </div>
+                                </div>
+
+                                <div class="equipment-container equipment-ring">
+                                    <div class="equipment-description-container">
+                                        <div class="equipment-title">
+                                            <h4 class="arcana">Ring of Malevolence</h4>
+                                            <img src="./equipments/arcana/ring.jpg">
+                                        </div>
+                                        <div class="equipment-description">
+                                            <h5 class="arcana">[Epic]</h5>
+                                            <br>
+                                            <h5><span class="arcana">Arcana</span> Grade Accessory</h5>
+                                            <br>
+                                            <p>You can feel malevolence sharp as dagger</p>
+                                            <br>
+                                            <h5>Stats</h5>
+                                            <ul>
+                                                <li>∴ +675 Main Stat</li>
+                                                <li>∴ +15% Skill Damage</li>
+                                                <li>∴ +0.15x Crit Multiplier</li>
+                                                <li>∴ +50 Movement Speed</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Passive</h5>
+                                            <ul>
+                                                <li>⁘ Landing skill crit on boss activates Soul Harvest</li>
+                                                <li>⁘ Deals (MAIN STAT X 15) magic damage and restores 10% HP</li>
+                                                <li>⁘ Cooldown: 6 seconds</li>
+                                            </ul>
+                                            <h5>Active</h5>
+                                            <ul>
+                                                <li>❖ Activates Malevolence when damaging boss units below 50% HP</li>
+                                                <li>❖ Increases total damage by 10% [Type-B] for 5 seconds</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="equipment-explanation">
+                                    </div>
+                                </div>
+
+                                <div class="equipment-container equipment-helm">
+                                    <div class="equipment-description-container">
+                                        <div class="equipment-title">
+                                            <h4 class="arcana">Harvester's Mask</h4>
+                                            <img src="./equipments/arcana/helm.jpg">
+                                        </div>
+                                        <div class="equipment-description">
+                                            <h5 class="arcana">[Epic]</h5>
+                                            <br>
+                                            <h5><span class="arcana">Arcana</span> Grade Headwear</h5>
+                                            <br>
+                                            <p>Mask imbued with dread</p>
+                                            <br>
+                                            <h5>Stats</h5>
+                                            <ul>
+                                                <li>∴ +140 Armor</li>
+                                                <li>∴ +400 AGI</li>
+                                                <li>∴ +2000 HP</li>
+                                                <li>∴ +14% Skill Damage</li>
+                                                <li>∴ +12% Crit Chance</li>
+                                            </ul>
+                                            <br>
+                                            <h5>Passive</h5>
+                                            <ul>
+                                                <li>⁘ On attack, activates Harvester's Eye</li>
+                                                <li>⁘ Increases ATK DMG by 20%, crit multplier by 0.30x, AGI by 400 for 7.5 seconds</li>
+                                                <li>⁘ While active, critical hits grant 1% bonus in skill damage (up to 10%)</li>
+                                                <li>⁘ Cooldown: 15 seconds</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="equipment-explanation">
                                     </div>
                                 </div>
                             </div>
