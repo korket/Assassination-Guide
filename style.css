@@ -21,7 +21,7 @@ button {
 }
 
 ::-webkit-scrollbar {
-    background: transparent;
+    background: #3b3b3b;
     width: 0.7rem;
 }
 
@@ -46,13 +46,13 @@ main {
     width: 100%;
 }
 
-#introduction, #abilities, #equipments, #strategies {
+#introduction, #abilities, #equipments, #rotations {
     margin: .5rem;
     padding: .5rem;
     width: 100%;
 }
 
-#introduction>h3, #abilities>h3, #equipments>h3, #strategies>h3 {
+#introduction>h3, #abilities>h3, #equipments>h3, #rotations>h3 {
     margin: 0 0 .5rem .5rem;
 }
 
@@ -63,7 +63,7 @@ main {
         max-width: 1000px;
     }
 
-    #introduction, #abilities, #equipments, #strategies {
+    #introduction, #abilities, #equipments, #rotations {
         padding: 1.5rem;
         padding-top: 0.5rem;
     }
@@ -90,10 +90,6 @@ h5 {
 
 .stat {
     padding: 1rem;
-}
-
-.content-nav-ul {
-    display: none;
 }
 
 @media (min-width: 1000px) {
@@ -390,9 +386,9 @@ h5 {
     display: none;
 }
 
-/* strategies */
+/* rotations */
 
-.strategies-content {
+.rotations-content {
     padding: 1rem;
     background-color: #3b3b3b;
     border-radius: 10px;
