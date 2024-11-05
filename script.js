@@ -74,6 +74,8 @@ function showEquipments(button) {
 // equipment-show
 
 const equipment_container = document.querySelectorAll('.equipment-container');
+const two_equipment_description_container = document.querySelectorAll('.two-equipment-description-container');
+const equipmentExplanation = document.querySelectorAll('.equipment-explanation');
 const equipment_weapon = document.querySelector('.equipment-weapon');
 
 equipment_weapon.style.display = 'grid';
@@ -82,12 +84,26 @@ function hideEquipment() {
     for (const equipments of equipment_container) {
         equipments.style.display = 'none';
     };
+    for (const twoEquipments of two_equipment_description_container) {
+        twoEquipments.style.display = 'none';
+    };
+    for (const explanation of equipmentExplanation) {
+        explanation.style.display = 'none';
+    };
 };
 
 function showEquipment(img) {
     hideEquipment();
     const container = document.querySelectorAll('.equipment-'+img);
+    const twoEquipmentDescriptionContainer = document.querySelectorAll('.equipment-'+img+' > .two-equipment-description-container');
+    const equipmentExplanation = document.querySelectorAll('.equipment-'+img+' > .equipment-explanation');
     for (const element of container) {
         element.style.display = 'grid';
     };
+    for (const element of twoEquipmentDescriptionContainer) {
+        element.style.display = 'grid';
+    };
+    for (const element of equipmentExplanation) {
+        element.style.display = 'block';
+    }
 };

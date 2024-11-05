@@ -380,9 +380,16 @@ img, video {
         column-gap: 1rem;
     }
 
+    .two-equipment-description-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
     .equipment-explanation {
         padding: 0.5rem;
         margin-top: 0;
+        width: 100%;
     }
 }
 
