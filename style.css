@@ -405,6 +405,37 @@ img, video {
     border-radius: 10px;
 }
 
+.rotations-content-container {
+    display: grid;
+    grid-template-rows: 1fr 3rem;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.rotations-content-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 5px;
+    background-color: #222222;
+}
+
+.rotations-content-buttons button {
+    background-color: #7fffd4dd;
+    height: 100%;
+    width: 15%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.rotations-content-container video {
+    border-radius: 3px;
+    max-width: 100%;
+}
+
 /* footer styles */
 
 footer {
