@@ -325,6 +325,7 @@ img, video {
 
 .equipment-icon {
     width: 3rem;
+    cursor: pointer;
 }
 
 /* equipment description */
