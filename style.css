@@ -328,6 +328,10 @@ img, video {
     cursor: pointer;
 }
 
+.equipment-icon:hover {
+    scale: 120%;
+}
+
 /* equipment description */
 
 .equipment-description-container {
