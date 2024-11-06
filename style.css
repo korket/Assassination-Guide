@@ -436,6 +436,20 @@ img, video {
     max-width: 100%;
 }
 
+/* rotation */
+
+.rotation li {
+    margin-bottom: 0.4rem;
+}
+
+iframe {
+    border-radius: 3px;
+    margin: 1rem 0 1rem 0;
+    aspect-ratio: 16/9;
+    width: 100%;
+    height: auto;
+}
+
 /* footer styles */
 
 footer {
