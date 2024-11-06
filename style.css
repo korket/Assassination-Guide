@@ -431,7 +431,7 @@ img, video {
     cursor: pointer;
 }
 
-.rotations-content-container video {
+.rotations-content video {
     border-radius: 3px;
     max-width: 100%;
 }
@@ -444,7 +444,7 @@ img, video {
 
 iframe {
     border-radius: 3px;
-    margin: 1rem 0 1rem 0;
+    margin-top: 1rem;
     aspect-ratio: 16/9;
     width: 100%;
     height: auto;
