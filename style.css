@@ -254,6 +254,10 @@ img, video {
     width: 100%;
 }
 
+.ability video {
+    width: 100%;
+}
+
 .mobile-img {
     display: flex;
 }
