@@ -1,109 +1,73 @@
-// abilities selector
+// Abilities Selectors
+const abilities = document.querySelectorAll('.ability');
+const abilityDetails = document.querySelectorAll('.ability-d');
+const abilityButtons = document.querySelectorAll('.ability-button');
+const buttonD = document.querySelector('.button-d');
 
-const ability = document.querySelectorAll('.ability');
-const ability_d = document.querySelectorAll('.ability-d');
-const button_d = document.querySelector('.button-d');
-const abilitiesButtons = document.querySelectorAll('.ability-button')
-ability_d[0].style.display = 'flex';
-ability_d[1].style.display = 'flex';
-ability_d[2].style.display = 'flex';
-button_d.style.backgroundColor = '#a5e1e0';
+abilityDetails.forEach(d => d.style.display = 'flex');
+buttonD.style.backgroundColor = '#a5e1e0';
 
-function hide() {
-    for (const abilities of ability) {
-        abilities.style.display = 'none';
-    };
-};
-
-function removeAbilitiesButtonColor() {
-    for (const abilitiesButton of abilitiesButtons) {
-        abilitiesButton.style.backgroundColor = '#7fffd4dd';
-    };
-};
-
-function showAbility(button) {
-    hide();
-    removeAbilitiesButtonColor();
-    const container = document.querySelectorAll('.ability-'+button);
-    const abilitiesButton = document.querySelectorAll('.button-'+button);
-    for (const element of container) {
-        element.style.display = 'flex';
-    };
-    for (const button of abilitiesButton) {
-        button.style.backgroundColor = '#a5e1e0';
-    };
-};
-
-// equipment-buttons
-
-const equipments_neptinos = document.querySelector('.equipments-neptinos');
-const equipment_buttons = document.querySelectorAll('.equipment-button');
-const neptinos_button = document.querySelector('.button-neptinos');
-
-equipments_neptinos.style.display = 'flex';
-neptinos_button.style.backgroundColor = neptinos_button.getAttribute('color');
-
-function removeColor() {
-    for (const buttons of equipment_buttons) {
-        buttons.style.backgroundColor = '';
-    };
-};
-
+// Equipments Selectors
 const equipments = document.querySelectorAll('.equipments');
+const equipmentButtons = document.querySelectorAll('.equipment-button');
+const equipmentContainers = document.querySelectorAll('.equipment-container');
+const equipmentsNeptinos = document.querySelector('.equipments-neptinos');
+const equipmentWeapon = document.querySelector('.equipment-weapon');
+const neptinosButton = document.querySelector('.button-neptinos');
 
-function removeGrade() {
-    for (const equipment of equipments) {
-        equipment.style.display = 'none';
-    };
-};
+neptinosButton.style.backgroundColor = neptinosButton.getAttribute('color');
+equipmentsNeptinos.style.display = 'flex';
+equipmentWeapon.style.display = 'grid';
 
-function showEquipments(button) {
-    removeColor();
-    removeGrade();
-    const container = document.querySelectorAll('.button-'+button);
-    const gradeContainer = document.querySelectorAll('.equipments-'+button);
-    for (const element of container) {
-        element.style.backgroundColor = element.getAttribute ('color');
-    };
-    for (const grade of gradeContainer) {
-        grade.style.display = 'flex';
-    };
+// Rotations Selectors
+const rotationButtons = document.querySelectorAll('.rotation-button');
+const rotations = document.querySelectorAll('.rotation');
+const rotationOneButton = document.querySelector('.rotation-one-button');
+const rotationOne = document.querySelector('.rotation-one');
+
+rotationOne.style.display = 'block';
+rotationOneButton.style.backgroundColor = '#a5e1e0';
+
+// Utility functions
+function hideElements(elements) {
+    elements.forEach(el => el.style.display = 'none');
+}
+
+function setButtonColor(buttons, color = '') {
+    buttons.forEach(button => button.style.backgroundColor = color);
+}
+
+// Ability functions
+function showAbility(buttonClass) {
+    hideElements(abilities);
+    setButtonColor(abilityButtons, '#7fffd4dd');
+    document.querySelectorAll(`.ability-${buttonClass}`).forEach(el => el.style.display = 'flex');
+    document.querySelectorAll(`.button-${buttonClass}`).forEach(btn => btn.style.backgroundColor = '#a5e1e0');
+}
+
+// Equipment functions
+function showEquipments(buttonClass) {
+    setButtonColor(equipmentButtons);
+    hideElements(equipments);
+    document.querySelectorAll(`.button-${buttonClass}`).forEach(btn => btn.style.backgroundColor = btn.getAttribute('color'));
+    document.querySelectorAll(`.equipments-${buttonClass}`).forEach(el => el.style.display = 'flex');
     showEquipment('weapon');
-};
+}
 
-// equipment-show
+// Equipment display functions
+function showEquipment(type) {
+    hideElements(equipmentContainers);
+    document.querySelectorAll(`.equipment-${type}`).forEach(el => {
+        el.style.display = 'grid';
+        el.querySelectorAll('.two-equipment-description-container').forEach(desc => desc.style.display = 'grid');
+        el.querySelectorAll('.equipment-explanation').forEach(exp => exp.style.display = 'block');
+    });
+}
 
-const equipment_container = document.querySelectorAll('.equipment-container');
-const two_equipment_description_container = document.querySelectorAll('.two-equipment-description-container');
-const equipmentExplanation = document.querySelectorAll('.equipment-explanation');
-const equipment_weapon = document.querySelector('.equipment-weapon');
-
-equipment_weapon.style.display = 'grid';
-
-function hideEquipment() {
-    for (const equipments of equipment_container) {
-        equipments.style.display = 'none';
-    };
-    for (const twoEquipments of two_equipment_description_container) {
-        twoEquipments.style.display = 'none';
-    };
-    for (const explanation of equipmentExplanation) {
-        explanation.style.display = 'none';
-    };
-};
-
-function showEquipment(img) {
-    hideEquipment();
-    const container = document.querySelectorAll('.equipment-'+img);
-    const twoEquipmentDescriptionContainer = document.querySelectorAll('.equipment-'+img+' > .two-equipment-description-container');
-    const equipmentExplanation = document.querySelectorAll('.equipment-'+img+' > .equipment-explanation');
-    for (const element of container) {
-        element.style.display = 'grid';
-    };
-    for (const element of twoEquipmentDescriptionContainer) {
-        element.style.display = 'grid';
-    };
-    for (const element of equipmentExplanation) {
-        element.style.display = 'block';
-    }
-};
+// Rotation functions
+function showRotation(num) {
+    hideElements(rotations);
+    setButtonColor(rotationButtons, '#7fffd4dd');
+    document.querySelectorAll(`.rotation-${num}-button`).forEach(btn => btn.style.backgroundColor = '#a5e1e0');
+    document.querySelector(`.rotation-${num}`).style.display = 'block';
+}

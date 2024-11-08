@@ -447,6 +447,10 @@ img, video {
 
 /* rotation */
 
+.rotation {
+    display: none;
+}
+
 .rotation li {
     margin-bottom: 0.4rem;
 }
