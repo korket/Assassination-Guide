@@ -455,14 +455,6 @@ img, video {
     margin-bottom: 0.4rem;
 }
 
-iframe {
-    border-radius: 3px;
-    margin-top: 1rem;
-    aspect-ratio: 16/9;
-    width: 100%;
-    height: auto;
-}
-
 /* footer styles */
 
 footer {
