@@ -74,4 +74,12 @@ function showRotation(num) {
     setButtonColor(rotationButtons, '#7fffd4dd');
     document.querySelectorAll(`.rotation-${num}-button`).forEach(btn => btn.style.backgroundColor = '#a5e1e0');
     document.querySelector(`.rotation-${num}`).style.display = 'block';
+    document.querySelector('.rotations-content-container video').src = "./rotations/"+num+".mp4";
+    if (num == 'four') {
+        document.querySelector('.rotations-content-container video').setAttribute("controls", true);
+    }
+    else {
+        document.querySelector('.rotations-content-container video').removeAttribute("controls");
+        document.querySelector('.rotations-content-container video').setAttribute("muted", true);
+    };
 }
