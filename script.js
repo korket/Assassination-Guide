@@ -13,6 +13,8 @@ const equipmentButtons = document.querySelectorAll('.equipment-button');
 const equipmentContainers = document.querySelectorAll('.equipment-container');
 const equipmentsNeptinos = document.querySelector('.equipments-neptinos');
 const equipmentWeapon = document.querySelector('.equipment-weapon');
+const twoEquipmentDescriptionContainers = document.querySelectorAll('.two-equipment-description-container');
+const equipmentExplanation = document.querySelectorAll('.equipment-explanation');
 const neptinosButton = document.querySelector('.button-neptinos');
 
 neptinosButton.style.backgroundColor = neptinosButton.getAttribute('color');
@@ -57,6 +59,8 @@ function showEquipments(buttonClass) {
 // Equipment display functions
 function showEquipment(type) {
     hideElements(equipmentContainers);
+    hideElements(twoEquipmentDescriptionContainers);
+    hideElements(equipmentExplanation);
     document.querySelectorAll(`.equipment-${type}`).forEach(el => {
         el.style.display = 'grid';
         el.querySelectorAll('.two-equipment-description-container').forEach(desc => desc.style.display = 'grid');
